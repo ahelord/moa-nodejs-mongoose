@@ -1,0 +1,29 @@
+{
+  "name": "moa",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev:start": "nodemon ./start_server.js",
+    "prod:start": "node ./node_modules/.bin/pm2 start start_server.js -i max --name moa",
+    "prod:stop": "node ./node_modules/.bin/pm2 stop start_server.js -i max --name moa"
+
+  },
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "classlist.js": "^1.1.20150312",
+    "concurrently": "^3.5.1",
+    "core-js": "^2.4.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3",
+    "pm2": "^2.10.3",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+  }
+}
