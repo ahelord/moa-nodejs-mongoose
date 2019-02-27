@@ -17,6 +17,6 @@ var startupsModel = new schema({
   timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'}
 });
 
-startupsModel.index({'$**': 'text'});
+//startupsModel.index({'$**': 'text'});
 
 module.exports = mongoose.model('startups', startupsModel);

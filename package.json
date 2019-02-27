@@ -6,7 +6,6 @@
     "dev:start": "nodemon ./start_server.js",
     "prod:start": "node ./node_modules/.bin/pm2 start start_server.js -i max --name moa",
     "prod:stop": "node ./node_modules/.bin/pm2 stop start_server.js -i max --name moa"
-
   },
   "private": false,
   "dependencies": {

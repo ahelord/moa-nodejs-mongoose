@@ -13,7 +13,7 @@ var entrepreneurModel = new mongoose.Schema({
   email: {
     type: String,
     trim: true,
-    unique: true,
+    //unique: true,
     required: true,
     //validate: [validateEmail, 'Please fill a valid email address'],
     //match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
@@ -23,6 +23,6 @@ var entrepreneurModel = new mongoose.Schema({
   timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'}
 
 });
-entrepreneurModel.index({'$**': 'text'});
+//entrepreneurModel.index({'$**': 'text'});
 
 module.exports = mongoose.model('entrepreneurs', entrepreneurModel);
