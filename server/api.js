@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var entrepreneurRoute = require('./routes/entrepreneur.route');
-var startupRoute = require('./routes/startup.route');
+var usersRoute = require('./routes/users.route');
 
-router.use('/entrepreneur', entrepreneurRoute);
-router.use('/startup', startupRoute);
+router.use('/users', usersRoute);
 
 module.exports = router;
