@@ -19,3 +19,10 @@ query parameter:
 * page: number of the page to query
 * startingPrice: From the price range is the initial price of the hats
 * finalPrice: From the price range is the final price of the hats
+
+## Recommendations endpoint
+
+call by GET method `http://localhost:3000/api/users/recommendations?page=1` 
+
+query parameter:
+* page: number of the page to query

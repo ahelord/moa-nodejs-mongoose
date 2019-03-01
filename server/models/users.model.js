@@ -15,16 +15,11 @@ var usersModel = new schema(
                 ref: 'hats'
             }
         ],
-        recommendedHats: [
-            {
-                type: schema.ObjectId,
-                ref: 'recommendations'
-            }
-        ]
     }, {
         timestamps: true
     });
 
 usersModel.plugin(mongooseAggregatePaginate);
+
 
 module.exports = mongoose.model('users', usersModel);

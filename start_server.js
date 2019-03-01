@@ -16,7 +16,7 @@ mongoose.set('debug', true);
  * Set up default mongoose connection
  */
 var mongoDB = 'mongodb+srv://root:O7DgnKqSqCFmvC6n@tests-0eeni.mongodb.net/test';
-mongoose.connect(mongoDB, {useNewUrlParser: true});
+mongoose.connect(mongoDB, { useNewUrlParser: true, useCreateIndex: true });
 mongoose.Promise = global.Promise;
 
 /**
